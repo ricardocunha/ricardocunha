@@ -1,0 +1,23 @@
+{
+  "name": "ricardocunha",
+  "version": "1.0.0",
+  "description": "<!-- **ricardocunha/ricardocunha** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ricardocunha/ricardocunha.git"
+  },
+  "author": "Ricardo Cunha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ricardocunha/ricardocunha/issues"
+  },
+  "homepage": "https://github.com/ricardocunha/ricardocunha#readme",
+  "dependencies": {
+    "mustache": "^4.2.0",
+    "node-fetch": "^3.2.4"
+  }
+}
