@@ -37,13 +37,16 @@
 
 - 🔍 **Company Acquisitions**: Evaluated and integrated products from acquired companies (Beckon, ScaleArc, Symphony, Layer, Infinio)
 - 📊 **Performance Analysis**: Analyzed backlog and measured key engineers' performance for optimal resource allocation
-- 🏗️ **Infrastructure Migration**: Replaced existing infrastructure with cost-effective solutions
+- 🏗️ **Infrastructure Migration**: Replaced existing infrastructure with cost-effective cloud solutions using AWS and GCP
 - ✅ **100% Success Rate**: Successfully completed all company integrations
+- ☁️ **Multi-Cloud Expertise**: Utilized both AWS and GCP services for scalable solutions
 
 **Tech Stack:**
 ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=flat&logo=openjdk&logoColor=white)
 ![Angular](https://img.shields.io/badge/angular-%23DD0031.svg?style=flat&logo=angular&logoColor=white)
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=flat&logo=react&logoColor=%2361DAFB)
+![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=flat&logo=amazon-aws&logoColor=white)
+![GCP](https://img.shields.io/badge/Google%20Cloud-%234285F4.svg?style=flat&logo=google-cloud&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/postgres-%23316192.svg?style=flat&logo=postgresql&logoColor=white)
 ![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=flat&logo=mysql&logoColor=white)
 
@@ -80,6 +83,8 @@
 ### ☁️ Cloud & Infrastructure
 ```
 ✔ AWS (EC2, Lambda, EKS, ECR, API Gateway, IAM, S3, SQS, SNS, Route 53, DynamoDB, OpenSearch, RDS, VPC)
+✔ GCP (Compute Engine, Cloud Functions, GKE, Container Registry, Cloud Endpoints, IAM, Cloud Storage, 
+   Pub/Sub, Cloud DNS, Firestore, Cloud SQL, VPC Networks)
 ✔ Infrastructure as Code (Terraform/OpenTofu)
 ✔ Kubernetes Operators & Container Orchestration
 ✔ Docker & Containerization
@@ -111,7 +116,8 @@
 ✔ RAG (Retrieval-Augmented Generation)
 ✔ LLM Chains
 ✔ N8N Data Flows
-✔ OpenCV
+✔ ADK (Application Development Kit)
+✔ MCP (Model Context Protocol)
 ```
 
 ### 🎨 Frontend Technologies
