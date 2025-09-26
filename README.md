@@ -74,7 +74,7 @@
 ### 💻 Developer @ CTIS Informatica (2005 - 2013)
 *Brasília, Brazil - Correios (Brazilian Post Office)*
 
-- 📦 **SARA System**: Developed automation system for Brazilian Post using Java Swing
+- 📦 **SARA System**: Developed an automation system for Brazilian Post using Java Swing
 - 🔧 **Hardware Integration**: Integrated printers, pin pads, and scales
 - 📈 **Performance Improvement**: Increased performance by 70% through payload optimization
 
@@ -137,7 +137,7 @@
 - 🌐 **Remote Work Expert**: Experienced in remote collaboration with agile teams
 - 🔍 **Independent Problem Solver**: Proactive attitude towards complex challenges  
 - 🧹 **Clean Code Advocate**: Passionate about writing clean, testable, and efficient code
-- 📚 **Continuous Learner**: Self-learner curious about building new ideas and businesses
+- 📚 **Continuous Learner**: Self-learner, curious about building new ideas and businesses
 - 💬 **Fluent Communicator**: Comfortable using English daily for international collaboration
 
 ---
