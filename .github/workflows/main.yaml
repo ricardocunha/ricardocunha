@@ -27,9 +27,14 @@ jobs:
         run: npm install
       - name: Generate README file
         run: node index.js
+      - name: Configure Git
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
       - name: Commit and Push new README.md to the repository
-        uses: mikeal/publish-to-github-action@master
-        with:
-          BRANCH: main
+        run: |
+          git add README.md
+          git diff --staged --quiet || git commit -m "Automated publish: $(date)"
+          git push origin main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
