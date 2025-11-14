@@ -1,6 +1,6 @@
 # 👋 Hi, I'm Ricardo Cunha
 
-![Profile Views](https://komarev.com/ghpvc/?username=ricardocunha&color=blueviolet)
+![Profile Views](https://komarev.com/ghpvc/?username=ricardocunha&color=blueviolet) ![](https://hit.yhype.me/github/profile?account_id=1058969)
 
 ## 🚀 Principal Architect | Cloud Solutions Expert
 
