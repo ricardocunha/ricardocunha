@@ -185,9 +185,7 @@ Centro Universitário de Brasília (UniCEUB) - 2008
 
 ## 📊 GitHub Stats
 
-![Your GitHub stats](https://github-readme-stats.vercel.app/api?username=ricardocunha&show_icons=true&theme=radical)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=ricardocunha&layout=compact&theme=radical)
+![GitHub Streak](https://streak-stats.demolab.com/?user=ricardocunha&theme=radical)
 
 ---
 
