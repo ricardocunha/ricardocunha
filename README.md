@@ -193,9 +193,9 @@ Centro Universitário de Brasília (UniCEUB) - 2008
 
 I'm always interested in discussing cloud architecture, AI solutions, and innovative software development. Feel free to reach out!
 
-💼 **LinkedIn:** [Connect with me](https://www.linkedin.com/in/ricardopereiradacunha)
-🐙 **GitHub:** [Check out my repositories](https://github.com/ricardocunha)
-📚 **Stack Overflow:** [ricardo-cunha](https://stackoverflow.com/users/635573/ricardo-cunha)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Ricardo%20Cunha-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ricardopereiradacunha)
+[![GitHub](https://img.shields.io/badge/GitHub-ricardocunha-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ricardocunha)
+[![Stack Overflow](https://img.shields.io/badge/Stack%20Overflow-ricardo--cunha-F58025?style=for-the-badge&logo=stackoverflow&logoColor=white)](https://stackoverflow.com/users/635573/ricardo-cunha)
 
 ---
 
