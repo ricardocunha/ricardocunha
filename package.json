@@ -1,10 +1,14 @@
 {
   "name": "ricardocunha",
-  "version": "1.0.0",
-  "description": "<!-- **ricardocunha/ricardocunha** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.",
-  "main": "index.js",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Generator for the ricardocunha GitHub profile README.",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "node scripts/build.mjs",
+    "preview": "node scripts/build.mjs --preview",
+    "stats": "node scripts/fetch-stats.mjs",
+    "test": "node --test \"test/*.test.mjs\""
   },
   "repository": {
     "type": "git",
@@ -12,12 +16,10 @@
   },
   "author": "Ricardo Cunha",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ricardocunha/ricardocunha/issues"
+  "engines": {
+    "node": ">=22"
   },
-  "homepage": "https://github.com/ricardocunha/ricardocunha#readme",
   "dependencies": {
-    "mustache": "^4.2.0",
-    "node-fetch": "^3.2.4"
+    "mustache": "^4.2.0"
   }
 }
