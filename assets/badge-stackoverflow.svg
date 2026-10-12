@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="141" height="28" viewBox="0 0 141 28" role="img" aria-label="Stack Overflow">
+  <title>Stack Overflow</title>
+  <rect x="0.5" y="0.5" width="140" height="27" rx="13.5" fill="#21262d" stroke="#484f58"/>
+  <circle cx="15" cy="14" r="3.5" fill="#58a6ff"/>
+  <text x="26" y="18" textLength="100.8" lengthAdjust="spacingAndGlyphs" fill="#f0f6fc" font-family="ui-monospace, SFMono-Regular, &apos;SF Mono&apos;, Menlo, Consolas, &apos;Liberation Mono&apos;, monospace" font-size="12" font-weight="600">Stack Overflow</text>
+</svg>

@@ -1,0 +1,155 @@
+{
+  "name": "Ricardo Cunha",
+  "handle": "ricardocunha",
+  "role": "Principal Architect",
+  "tagline": "I build AI products and the platforms that run them.",
+  "base": "Brazil, remote (UTC+1 to UTC-7)",
+  "careerStart": 2005,
+  "bio": "Principal Architect in Brazil, working remotely with U.S. companies. I started in 2005 on desktop automation for the Brazilian post office, moved through insurance, fintech and payments, and now build AI products: RAG and agent workflows that turn messy regulatory text into structured data, and the Go services, data pipelines and Kubernetes platforms underneath them. I work spec-first, so that what an agent builds can be checked against what was asked.",
+  "highlights": [
+    "Agent workflows (Python, LangChain/LangGraph, RAG) that cut manual collection of EV incentive data by 90%, with human review kept for validation",
+    "Event-driven EV fleet platform for 300 enterprise customers and 6,000 vehicles: 360K API calls a day, 8M+ telemetry records a month, 20 TB of analytics data",
+    "Go REST/gRPC APIs with load times reduced by 60% through caching and a horizontally scalable rewrite",
+    "Multi-region AWS EKS disaster recovery that met the company SLA three years running",
+    "Defined the department's Spec-Driven Development workflow for AI-assisted engineering"
+  ],
+  "projects": [
+    {
+      "name": "keelgw",
+      "title": "Keel Gateway",
+      "url": "https://github.com/ricardocunha/keelgw",
+      "visibility": "private, going public soon",
+      "pitch": "Multi-tenant AI gateway that lets a small business govern how its people use AI: which models each member can reach, through which clients, and at what USD spend, all on the company's own provider accounts.",
+      "details": "A Go streaming proxy sits between Claude Code, Claude Cowork or Codex and the company's Anthropic, Bedrock or OpenAI accounts. Members sign in with a work account instead of handling API keys; quota is reserved before each request and settled from token usage. Remote MCP servers are filtered and logged at the gateway.",
+      "stack": ["Go", "PostgreSQL row-level security", "Valkey", "Next.js", "OpenTofu", "ArgoCD", "Helm"],
+      "facts": [
+        "About 0.6 ms median proxy overhead, measured locally against a mock provider",
+        "24 Prometheus alert rules, each with a runbook",
+        "Built spec-first with OpenSpec: 19 changes, 8 ADRs"
+      ],
+      "status": "Runs end to end on a laptop (kind plus an AWS emulator). Not deployed to AWS yet."
+    },
+    {
+      "name": "sportsvision",
+      "title": "SportsVision",
+      "url": "https://github.com/ricardocunha/sportsvision",
+      "visibility": "private, going public soon",
+      "pitch": "Turns football video into structured, evidence-backed offside decisions, and says so when it cannot make one.",
+      "details": "A Python perception plane (RF-DETR detection, ByteTrack tracking, team clustering, homography) feeds a deterministic Go rules engine. Every detected pass gets an offside line, a margin in metres and a confidence built from seven named terms; INCONCLUSIVE and REVIEW_REQUIRED are first-class outcomes.",
+      "stack": ["Python", "Go", "RF-DETR", "ONNX Runtime", "SQS", "PostgreSQL", "KEDA", "Terraform", "React"],
+      "facts": [
+        "Five services over six queues, scaling from zero on queue depth",
+        "21 ADRs and JSON Schema contracts between Go and Python, checked for drift in CI",
+        "Apache-2.0, including every model it uses"
+      ],
+      "status": "Full pipeline runs on a local Kubernetes cluster. No accuracy figure yet: there are no labelled clips, so thresholds are uncalibrated."
+    }
+  ],
+  "earlier": [
+    {
+      "name": "wAIllet",
+      "url": "https://github.com/ricardocunha/waillet-mono",
+      "pitch": "AI-powered crypto wallet browser extension"
+    },
+    {
+      "name": "freelens-karpenter-extension",
+      "url": "https://github.com/ricardocunha/freelens-karpenter-extension",
+      "pitch": "Karpenter node pools, claims and pending pods inside FreeLens"
+    },
+    {
+      "name": "stack-cli",
+      "url": "https://github.com/ricardocunha/stack-cli",
+      "pitch": "Go CLI that scans a project and reports its languages, frameworks and cloud services"
+    },
+    {
+      "name": "n8n-operator",
+      "url": "https://github.com/ricardocunha/n8n-operator",
+      "pitch": "Kubernetes operator that deploys n8n"
+    }
+  ],
+  "experience": [
+    {
+      "period": "2021 to present",
+      "role": "Principal Architect",
+      "org": "ZappyRide by J.D. Power",
+      "location": "USA (remote)",
+      "highlights": [
+        "Built AI-powered EV incentives capabilities with Python, LangChain/LangGraph, RAG and LLM chains, reducing manual data collection by 90% while keeping human review for validation",
+        "Designed agent workflows that collect, normalize, extract and validate regulatory and incentive information into structured data for customer-facing products",
+        "Led AI adoption engagements with CTOs and VPs, reducing personnel costs by 70% and accelerating delivery by 50%",
+        "Defined the department's Spec-Driven Development workflow",
+        "Architected an event-driven EV fleet intelligence SaaS platform serving 300 enterprise customers and 6,000 vehicles, processing 360K daily API calls and 8M+ monthly telemetry records, with 20 TB of analytics data",
+        "Built distributed REST/gRPC APIs in Go with backend engineers, reducing API load times by 60%",
+        "Developed disaster recovery for multi-region AWS EKS deployments, meeting the company SLA for three consecutive years",
+        "Built GitOps delivery with ArgoCD and a shared Helm chart; designed the EKS rollout with Prometheus Operator, External Secrets, cert-manager, Kyverno and Karpenter",
+        "Instrumented Go services, authored 15+ unit-tested alert rules, and managed Grafana dashboards as code"
+      ]
+    },
+    {
+      "period": "2018 to 2021",
+      "role": "Lead Software Engineer",
+      "org": "Crossover",
+      "location": "USA (remote)",
+      "highlights": [
+        "Evaluated companies for acquisition and centralized their products, reducing integration failures by 70%",
+        "Reverse-engineered multiple products and planned their infrastructure migration",
+        "Built loan origination, rewards and flexible payment features on the Upgrade financial platform",
+        "Implemented a payment gateway bridging Stripe and PayPal over Kafka, integrated with Symphony Commerce",
+        "Extended Sococo's WebRTC audio and video sharing and optimized its MongoDB analytics"
+      ]
+    },
+    {
+      "period": "2017 to 2018",
+      "role": "IT Solutions Consultant",
+      "org": "IBM",
+      "location": "Brazil (remote)",
+      "highlights": [
+        "Developed React and Angular frontend architectures for an internal e-learning platform, mentoring junior developers in teams in the Netherlands and the USA"
+      ]
+    },
+    {
+      "period": "2016 to 2017",
+      "role": "Solutions Architect",
+      "org": "Altran",
+      "location": "Brasília, Brazil",
+      "highlights": [
+        "Migrated legacy JSF insurance applications to React and Go, improving response time by 30% and reducing server resources by 40%"
+      ]
+    },
+    {
+      "period": "2005 to 2016",
+      "role": "Developer and Software Architect",
+      "org": "CTIS Informatica",
+      "location": "Brasília, Brazil",
+      "highlights": [
+        "Developed and maintained SARA, the counter automation system for Correios (the Brazilian post office), in Java Swing with printers, pin pads and scales",
+        "Improved performance by 70% with caching and smaller payloads"
+      ]
+    }
+  ],
+  "skills": {
+    "ai": ["MCP", "RAG", "LLM fine-tuning", "LangChain", "LangGraph", "LangSmith", "CrewAI", "Hugging Face", "MLflow", "Weaviate", "OpenAI", "Anthropic", "Spec-Driven Development", "OpenSpec", "agent harness design"],
+    "languagesAndFrameworks": ["Go", "Python", "Java", "TypeScript", "Node.js", "gRPC", "GraphQL", "Django", "Quarkus", "Spring Boot", "NestJS", "React", "Angular", "NumPy", "Pandas"],
+    "data": ["PostgreSQL", "MySQL", "DynamoDB", "Cassandra", "Redis", "Elasticsearch", "OpenSearch", "MongoDB", "Kafka", "Databricks"],
+    "cloudAndDevOps": ["AWS", "Terraform", "GitHub Actions", "GitLab", "Grafana", "Lambda", "SQS", "SNS", "Cognito", "IAM"],
+    "kubernetes": ["EKS", "GKE", "Helm", "ArgoCD", "Karpenter", "KEDA", "Prometheus", "External Secrets"]
+  },
+  "certifications": [
+    "AWS Certified Solutions Architect - Associate",
+    "AWS Certified Machine Learning Engineer - Associate",
+    "Anthropic Claude Certified Architect - Foundation"
+  ],
+  "education": [
+    "B.Sc. Computer Science, Centro Universitário de Brasília (UniCEUB), 2008"
+  ],
+  "availability": "",
+  "links": {
+    "github": "https://github.com/ricardocunha",
+    "linkedin": "https://www.linkedin.com/in/ricardopereiradacunha",
+    "stackoverflow": "https://stackoverflow.com/users/635573/ricardo-cunha"
+  },
+  "mcp": {
+    "url": "",
+    "serverName": "ricardocunha-profile"
+  }
+}

@@ -1,0 +1,65 @@
+name: Update profile
+
+on:
+  schedule:
+    - cron: "17 5 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - data/profile.json
+      - templates/**
+      - scripts/**
+      - test/**
+      - package.json
+      - package-lock.json
+      - .github/workflows/update-profile.yml
+
+permissions:
+  contents: read
+
+concurrency:
+  group: update-profile
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          # Branch tip, not the triggering commit, so a queued run can still push.
+          ref: ${{ github.ref_name }}
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - run: npm test
+
+      - name: Refresh stats
+        env:
+          # Optional PAT so the contribution count matches what the profile shows.
+          GH_TOKEN: ${{ secrets.PROFILE_STATS_TOKEN || github.token }}
+        run: npm run stats
+
+      - run: npm run build
+
+      - name: Commit if changed
+        if: github.ref == 'refs/heads/main'
+        run: |
+          git add README.md assets data/stats.json
+          if git diff --cached --quiet; then
+            echo "Nothing to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore: refresh profile"
+          git push

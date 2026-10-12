@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="220" viewBox="0 0 880 220" role="img" aria-label="Ricardo Cunha · Principal Architect · I build AI products and the platforms that run them.">
+  <title>Ricardo Cunha · Principal Architect · I build AI products and the platforms that run them.</title>
+  <style>
+    .name { font: 700 44px -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif; fill: #e6edf3; letter-spacing: -0.5px; }
+    .role { font: 600 14px ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace; fill: #58a6ff; }
+    .tag { font: 400 16px ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace; fill: #e6edf3; }
+    .base { font: 400 12px ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace; fill: #8b949e; }
+    .cursor { fill: #58a6ff; animation: blink 1.2s steps(1) infinite; }
+    .node { fill: #58a6ff; animation: pulse 4s ease-in-out infinite; }
+    .n1 { animation-delay: 1.3s; }
+    .n2 { animation-delay: 2.6s; }
+    @keyframes blink { 50% { opacity: 0; } }
+    @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.45; } }
+    @media (prefers-reduced-motion: reduce) { .cursor, .node { animation: none; } }
+  </style>
+  <rect x="0.5" y="0.5" width="879" height="219" rx="12" fill="#0d1117" stroke="#30363d"/>
+  <g fill="#262d36"><circle cx="652" cy="38" r="1.6"/><circle cx="676" cy="38" r="1.6"/><circle cx="700" cy="38" r="1.6"/><circle cx="724" cy="38" r="1.6"/><circle cx="748" cy="38" r="1.6"/><circle cx="772" cy="38" r="1.6"/><circle cx="796" cy="38" r="1.6"/><circle cx="820" cy="38" r="1.6"/><circle cx="844" cy="38" r="1.6"/><circle cx="652" cy="62" r="1.6"/><circle cx="676" cy="62" r="1.6"/><circle cx="700" cy="62" r="1.6"/><circle cx="724" cy="62" r="1.6"/><circle cx="748" cy="62" r="1.6"/><circle cx="772" cy="62" r="1.6"/><circle cx="796" cy="62" r="1.6"/><circle cx="820" cy="62" r="1.6"/><circle cx="844" cy="62" r="1.6"/><circle cx="652" cy="86" r="1.6"/><circle cx="676" cy="86" r="1.6"/><circle cx="700" cy="86" r="1.6"/><circle cx="724" cy="86" r="1.6"/><circle cx="748" cy="86" r="1.6"/><circle cx="772" cy="86" r="1.6"/><circle cx="796" cy="86" r="1.6"/><circle cx="820" cy="86" r="1.6"/><circle cx="844" cy="86" r="1.6"/><circle cx="652" cy="110" r="1.6"/><circle cx="676" cy="110" r="1.6"/><circle cx="700" cy="110" r="1.6"/><circle cx="724" cy="110" r="1.6"/><circle cx="748" cy="110" r="1.6"/><circle cx="772" cy="110" r="1.6"/><circle cx="796" cy="110" r="1.6"/><circle cx="820" cy="110" r="1.6"/><circle cx="844" cy="110" r="1.6"/><circle cx="652" cy="134" r="1.6"/><circle cx="676" cy="134" r="1.6"/><circle cx="700" cy="134" r="1.6"/><circle cx="724" cy="134" r="1.6"/><circle cx="748" cy="134" r="1.6"/><circle cx="772" cy="134" r="1.6"/><circle cx="796" cy="134" r="1.6"/><circle cx="820" cy="134" r="1.6"/><circle cx="844" cy="134" r="1.6"/><circle cx="652" cy="158" r="1.6"/><circle cx="676" cy="158" r="1.6"/><circle cx="700" cy="158" r="1.6"/><circle cx="724" cy="158" r="1.6"/><circle cx="748" cy="158" r="1.6"/><circle cx="772" cy="158" r="1.6"/><circle cx="796" cy="158" r="1.6"/><circle cx="820" cy="158" r="1.6"/><circle cx="844" cy="158" r="1.6"/><circle cx="652" cy="182" r="1.6"/><circle cx="676" cy="182" r="1.6"/><circle cx="700" cy="182" r="1.6"/><circle cx="724" cy="182" r="1.6"/><circle cx="748" cy="182" r="1.6"/><circle cx="772" cy="182" r="1.6"/><circle cx="796" cy="182" r="1.6"/><circle cx="820" cy="182" r="1.6"/><circle cx="844" cy="182" r="1.6"/></g>
+  <g stroke="#58a6ff" stroke-width="1.5" stroke-opacity="0.45"><line x1="676" y1="110" x2="724" y2="62"/><line x1="676" y1="110" x2="724" y2="158"/><line x1="724" y1="62" x2="772" y2="110"/><line x1="724" y1="158" x2="772" y2="110"/><line x1="772" y1="110" x2="820" y2="86"/><line x1="772" y1="110" x2="820" y2="158"/></g>
+  <g><circle class="node n0" cx="676" cy="110" r="4"/><circle class="node n1" cx="724" cy="62" r="4"/><circle class="node n2" cx="724" cy="158" r="4"/><circle class="node n0" cx="772" cy="110" r="4"/><circle class="node n1" cx="820" cy="86" r="4"/><circle class="node n2" cx="820" cy="158" r="4"/></g>
+  <rect x="48" y="44" width="36" height="4" rx="2" fill="#58a6ff"/>
+  <text class="name" x="46" y="102">Ricardo Cunha</text>
+  <text class="role" x="48" y="132" textLength="195.6" lengthAdjust="spacing">PRINCIPAL ARCHITECT</text>
+  <text class="tag" x="48" y="166" textLength="499.2" lengthAdjust="spacingAndGlyphs">I build AI products and the platforms that run them.</text>
+  <rect class="cursor" x="552.2" y="152" width="9" height="18" rx="1"/>
+  <text class="base" x="48" y="194" textLength="223.2" lengthAdjust="spacingAndGlyphs">Brazil, remote (UTC+1 to UTC-7)</text>
+</svg>

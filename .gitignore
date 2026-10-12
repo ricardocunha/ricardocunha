@@ -1,2 +1,9 @@
 /node_modules
 CV.md
+
+# superdeck data directory
+.superdeck/
+
+# local preview of the README with the MCP section enabled (sample data)
+preview/
+.DS_Store

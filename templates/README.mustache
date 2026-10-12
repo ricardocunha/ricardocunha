@@ -1,0 +1,68 @@
+{{#note}}
+> {{note}}
+
+{{/note}}
+<p align="center">
+  <a href="{{links.github}}">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="{{assetsHref}}banner-dark.svg">
+      <source media="(prefers-color-scheme: light)" srcset="{{assetsHref}}banner-light.svg">
+      <img src="{{assetsHref}}banner-light.svg" alt="{{bannerAlt}}" width="100%">
+    </picture>
+  </a>
+</p>
+
+<p align="center">
+{{#badges}}
+  <a href="{{href}}"><img src="{{assetsHref}}{{file}}" alt="{{label}}" height="28"></a>
+{{/badges}}
+</p>
+
+---
+
+{{bio}}
+
+{{#mcp}}
+**This profile speaks MCP.** Point your agent at `{{url}}` and it can call {{toolsText}}. Setup is in [mcp/README.md]({{rootHref}}mcp/README.md).
+
+{{/mcp}}
+## Highlights
+
+{{#highlights}}
+- {{.}}
+{{/highlights}}
+
+## Building now
+
+{{#projects}}
+**[{{name}}]({{url}})** · {{pitch}}<br>
+{{details}}<br>
+{{factsLine}}<br>
+Status: {{status}}
+
+{{/projects}}
+{{#earlierLine}}
+Earlier: {{earlierLine}}
+
+{{/earlierLine}}
+## By the numbers
+
+{{statsLine}}
+{{#mcpStatsLine}}
+
+{{mcpStatsLine}}
+{{/mcpStatsLine}}
+
+## Background
+
+{{#experience}}
+- {{period}} · {{role}}, {{org}}
+{{/experience}}
+
+{{#certificationsLine}}
+Certifications: {{certificationsLine}}
+
+{{/certificationsLine}}
+## Contact
+
+{{contactLine}}
