@@ -42,7 +42,7 @@ Earlier: [wAIllet](https://github.com/ricardocunha/waillet-mono) (AI-powered cry
 
 ## By the numbers
 
-21 years building software · 21 public repos · 43 followers · 30 stars · 1,175 contributions in the last year
+21 years building software · 17 public repos · 43 followers · 27 stars · 1,187 contributions in the last year
 
 ## Background
 
