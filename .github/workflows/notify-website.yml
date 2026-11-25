@@ -1,0 +1,30 @@
+name: Rebuild website
+
+# ricardocunha.dev renders its pages from data/profile.json. A push that changes the
+# Profile triggers a rebuild through the website's Vercel deploy hook.
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - data/profile.json
+
+permissions:
+  contents: read
+
+jobs:
+  deploy-hook:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Call the Vercel deploy hook
+        env:
+          HOOK: ${{ secrets.VERCEL_DEPLOY_HOOK_URL }}
+        run: |
+          if [ -z "$HOOK" ]; then
+            echo "VERCEL_DEPLOY_HOOK_URL is not set; skipping."
+            exit 0
+          fi
+          curl -fsS -X POST "$HOOK" > /dev/null
+          echo "Website rebuild requested."

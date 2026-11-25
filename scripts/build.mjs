@@ -13,14 +13,15 @@ import Mustache from 'mustache';
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const SEP = ' · ';
 
-// Tool names exposed by the server in mcp/. Keep in sync with mcp/README.md.
-export const MCP_TOOLS = ['get_resume', 'get_projects', 'check_availability', 'get_stats'];
+// Tools exposed by the MCP server in ricardocunha/ricardocunha-website. Keep in sync with its README.
+export const MCP_TOOLS = ['get_resume', 'get_projects', 'get_available_slots', 'book_call', 'get_stats'];
+export const MCP_DOCS_URL = 'https://ricardocunha.dev/developers';
 
-const PREVIEW_MCP_URL = 'https://mcp.ricardocunha.dev/mcp';
+const PREVIEW_MCP_URL = 'https://ricardocunha.dev/mcp';
 const PREVIEW_MCP_STATS = {
   mcp_events_total: 1284,
   mcp_events_7d: 96,
-  tool_calls: { get_resume: 540, get_projects: 410, check_availability: 190, get_stats: 144 },
+  tool_calls: { get_resume: 540, get_projects: 410, get_available_slots: 190, book_call: 12, get_stats: 144 },
   clients: {},
 };
 
@@ -167,7 +168,7 @@ export function buildView(profile, stats, { assetsHref = 'assets/', rootHref = '
     badges.push({
       file: 'badge-mcp.svg',
       label: `MCP${SEP}connect your agent`,
-      href: `${rootHref}mcp/README.md`,
+      href: MCP_DOCS_URL,
       accent: true,
     });
   }

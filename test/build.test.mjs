@@ -20,14 +20,14 @@ test('empty mcp.url leaves no trace of MCP, even when MCP stats exist', () => {
   // what must be absent is everything about this profile's own server.
   const ownCopy = profile.projects.reduce((text, p) => text.replace(p.details, ''), out);
   assert.doesNotMatch(ownCopy, /mcp/i);
-  assert.doesNotMatch(out, /speaks MCP|badge-mcp|mcp\/README|MCP usage|workers\.dev/);
-  assert.doesNotMatch(out, /get_resume|get_projects|check_availability|get_stats/);
+  assert.doesNotMatch(out, /speaks MCP|badge-mcp|ricardocunha\.dev\/developers|MCP usage|workers\.dev/);
+  assert.doesNotMatch(out, /get_resume|get_projects|get_available_slots|book_call|get_stats/);
 });
 
 test('mcp.url set renders callout, badge, usage and contact hint', () => {
   const out = render(withMcp, { github, mcp: mcpStats });
   assert.match(out, /\*\*This profile speaks MCP\.\*\* Point your agent at `https:\/\/example\.test\/mcp`/);
-  assert.match(out, /`get_resume`, `get_projects`, `check_availability` and `get_stats`/);
+  assert.match(out, /`get_resume`, `get_projects`, `get_available_slots`, `book_call` and `get_stats`/);
   assert.match(out, /assets\/badge-mcp\.svg/);
   assert.match(out, /MCP usage: 50 events in total · 5 in the last 7 days · most-called tool `get_resume`/);
   assert.match(out, /or let your agent call `get_resume`\./);
@@ -57,9 +57,9 @@ test('availability sentence appears only when set', () => {
   assert.match(render({ ...withoutMcp, availability: 'Open to talk' }, {}), /## Contact\n\nOpen to talk\. \[/);
 });
 
-test('preview paths are rebased', () => {
+test('MCP setup link is absolute, so preview rebasing leaves it alone', () => {
   const out = render(withMcp, {}, { rootHref: '../' });
-  assert.match(out, /\]\(\.\.\/mcp\/README\.md\)/);
+  assert.match(out, /\]\(https:\/\/ricardocunha\.dev\/developers\)/);
 });
 
 test('SVGs are self-contained', () => {
