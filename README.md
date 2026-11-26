@@ -12,11 +12,14 @@
   <a href="https://github.com/ricardocunha"><img src="assets/badge-github.svg" alt="GitHub" height="28"></a>
   <a href="https://www.linkedin.com/in/ricardopereiradacunha"><img src="assets/badge-linkedin.svg" alt="LinkedIn" height="28"></a>
   <a href="https://stackoverflow.com/users/635573/ricardo-cunha"><img src="assets/badge-stackoverflow.svg" alt="Stack Overflow" height="28"></a>
+  <a href="https://ricardocunha.dev/developers"><img src="assets/badge-mcp.svg" alt="MCP · connect your agent" height="28"></a>
 </p>
 
 ---
 
 Principal Architect in Brazil, working remotely with U.S. companies. I started in 2005 on desktop automation for the Brazilian post office, moved through insurance, fintech and payments, and now build AI products: RAG and agent workflows that turn messy regulatory text into structured data, and the Go services, data pipelines and Kubernetes platforms underneath them. I work spec-first, so that what an agent builds can be checked against what was asked.
+
+**This profile speaks MCP.** Point your agent at `https://ricardocunha.dev/mcp` and it can call `get_resume`, `get_projects`, `get_available_slots`, `book_call` and `get_stats`. Setup is at [ricardocunha.dev/developers](https://ricardocunha.dev/developers).
 
 ## Highlights
 
@@ -56,4 +59,4 @@ Certifications: AWS Certified Solutions Architect - Associate · AWS Certified M
 
 ## Contact
 
-[LinkedIn](https://www.linkedin.com/in/ricardopereiradacunha) · [Stack Overflow](https://stackoverflow.com/users/635573/ricardo-cunha)
+[LinkedIn](https://www.linkedin.com/in/ricardopereiradacunha) · [Stack Overflow](https://stackoverflow.com/users/635573/ricardo-cunha), or let your agent call `get_resume`.

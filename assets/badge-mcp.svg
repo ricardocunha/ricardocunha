@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="213" height="28" viewBox="0 0 213 28" role="img" aria-label="MCP · connect your agent">
+  <title>MCP · connect your agent</title>
+  <rect x="0.5" y="0.5" width="212" height="27" rx="13.5" fill="#1f6feb" stroke="#388bfd"/>
+  <circle cx="15" cy="14" r="3.5" fill="#ffffff"/>
+  <text x="26" y="18" textLength="172.8" lengthAdjust="spacingAndGlyphs" fill="#f0f6fc" font-family="ui-monospace, SFMono-Regular, &apos;SF Mono&apos;, Menlo, Consolas, &apos;Liberation Mono&apos;, monospace" font-size="12" font-weight="600">MCP · connect your agent</text>
+</svg>
