@@ -1,16 +1,21 @@
 {
-  "generatedAt": "2026-11-26T11:47:23.380Z",
+  "generatedAt": "2026-11-26T15:18:09.598Z",
   "github": {
     "user": "ricardocunha",
     "publicRepos": 18,
     "followers": 43,
-    "contributionsLastYear": 1300,
+    "contributionsLastYear": 1302,
     "stars": 27
   },
   "mcp": {
-    "mcp_events_total": 0,
-    "mcp_events_7d": 0,
-    "tool_calls": {},
-    "clients": {}
+    "mcp_events_total": 40,
+    "mcp_events_7d": 40,
+    "tool_calls": {
+      "book_call": 1,
+      "get_stats": 39
+    },
+    "clients": {
+      "curl": 40
+    }
   }
 }
